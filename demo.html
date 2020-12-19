@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;">
+
+<head>
+	<meta charset="utf-8" />
+	<link type="image/x-icon" rel="shortcut icon" href="img/icon.jpg" />
+	<title>RPG V0.5</title>
+	<script src="js/script.js"></script>
+	<script src="js/sprite.js"></script>
+	<link rel="stylesheet" href="css/missions.css">
+
+</head>
+
+<body bgcolor="#71d845">
+	<style>
+		canvas {
+			padding: 0;
+			margin: auto;
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border: 2px solid black;
+		}
+	</style>
+
+	<!-- The Modal -->
+	<!--Conversa com o NPC1 - 1ªfase-->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<!--<span class="close">&times;</span>-->
+			<img src="img/miniplayer5.png"> Hey, pode me ajudar?<p>
+				<button id="button1">Claro</button><button id="button4">Agora não dá jeito.</button>
+		</div>
+	</div>
+
+	<!-- The Modal -->
+	<!--Conversa com o NPC1 - 1ªfase Aceitar - ver qual é o trabalho-->
+	<div id="myModal2" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<img src="img/miniplayer5.png"> Eu perdi o meu machado, por favor ajude-me a encontrá-lo.<p>
+				<button id="button2">Conta comigo.</button><button id="button5">Talvez mais tarde.</button>
+		</div>
+	</div>
+
+	<!-- The Modal -->
+	<!--Conversa com o NPC1 - 2ªfase Aceitar - começar o trabalho-->
+	<div id="myModal3" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<img src="img/miniplayer5.png"> Vai lá, eu fico aqui à espera.<p>
+				<button id="button3">Eu vou voltar com o teu machado.</button>
+		</div>
+	</div>
+
+	<!-- The Modal -->
+	<!--Conversa com o NPC1 - 2ªfase Final Reward-->
+	<div id="myModal4" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<img src="img/miniplayer5.png"> Obrigado por teres encontrado o meu machado. Como recompensa ganhou 5 moedas
+			<p>
+				<button id="button6">Ir embora</button>
+		</div>
+	</div>
+
+	<div id="myModalinventory" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span><img src="img/bag.png"> (Vazio) <p>
+				<button id="button7">Voltar</button>
+		</div>
+	</div>
+	<div id="myModalinventory2" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span><img src="img/bag.png"> Machado x1 <p>
+				<button id="button8">Voltar</button>
+		</div>
+	</div>
+
+	<div id="myModalmission" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span><img src="img/bag.png"> (Sem missões) <p>
+				<button id="button7">Voltar</button>
+		</div>
+	</div>
+	<div id="myModalmission2" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span><img src="img/bag.png"> 1- Encontrar e devolver o Machado <p>
+				<button id="button8">Voltar</button>
+		</div>
+	</div>
+
+	<div id="myModalnpc1" class="modal">
+		<div class="modal-content">
+			<img src="img/miniplayer7.png">Tia Froo Sabe, Tia Froo Ensina.<p><button id="button9">Olá</button>
+		</div>
+	</div>
+
+	<div>
+		<!--<canvas width="800" height="600"></canvas>-->
+		<canvas width="1024" height="600"></canvas>
+		<!--<canvas width="1366" height="768"></canvas>-->
+	</div>
+	<div>
+		Estado do Jogo: Em Teste...
+	</div><br><br>
+	<div style="font-size: 14px; margin-left: 5px;">
+		Controlos:
+		<li>Setas para andar</li>
+		<li>X: falar com NPC</li>
+	</div>
+</body>
+
+</html>
