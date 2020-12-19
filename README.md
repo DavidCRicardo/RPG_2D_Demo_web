@@ -2,4 +2,5 @@
 
 > Developed in 2017
 > Web Game Test
+> Testing Purposes
 "Personal Project"
